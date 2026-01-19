@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at bottom, #111 0%, #000 60%);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* STAR BACKGROUND */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+        radial-gradient(1px 1px at 80% 40%, #fff, transparent),
+        radial-gradient(1px 1px at 50% 70%, #fff, transparent),
+        radial-gradient(1px 1px at 10% 80%, #fff, transparent),
+        radial-gradient(1px 1px at 90% 10%, #fff, transparent);
+      opacity: 0.4;
+      animation: stars 20s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes stars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-200px); }
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      max-width: 620px;
+      opacity: 0.85;
+      margin-bottom: 36px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: white;
+      color: black;
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); }
+
+    .btn-secondary {
+      border: 1px solid #2a2a2a;
+      color: white;
+    }
+
+    .btn-secondary:hover { background: #111; }
+
+    section {
+      padding: 90px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(6px);
+      transition: 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px;
+      opacity: 0.5;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Xeo Executor</h1>
+  <p>Xeo is a roblox Executor that is free but in beta. Xeo bad UI design will improve over time so keep up with updates:).</p>
+  <div class="buttons">
+    <a href="#" class="btn btn-primary">Download</a>
+    <a href="#" class="btn btn-secondary">Join Discord</a>
+  </div>
+</header>
+
+<section>
+  <h2>Core Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Minimal Design</h3>
+      <p>Pure black & white UI with space-inspired visuals.</p>
+    </div>
+    <div class="feature">
+      <h3>Smooth and fast Injection</h3>
+      <p>Xeo Uses Xeno The Best Free Executor Api So Its Fast And I Do Give Credits To Xeno To Get Xeno Goto <Xeno class="onl"></Xeno></p>
+    </div>
+    <div class="feature">
+      <h3>Esay To Use</h3>
+      <p>Xeo Is Esay To Use</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Xeo · Xeo Development Team
+</footer>
+
+</body>
+</html>
